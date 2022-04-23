@@ -38,7 +38,7 @@ html=
             <div class="row mt-3">\
                 <div class="col-12">\
                     <label for="jobdescription">Description</label>\
-                    <textarea class="form-control" name="job_description" id="jobdescription" rows="4"></textarea>\
+                    <textarea class="form-control" name="job_description" id="jobdescription" rows="4" rows="2" maxlength="150"></textarea>\
                 </div>\
             </div>\
         </div>\
@@ -96,7 +96,7 @@ html=
             <div class="row mt-3">\
                 <div class="col-12">\
                     <label for="educationdescription">Description</label>\
-                    <textarea class="form-control" name="education_description" id="educationdescription" rows="4"></textarea>\
+                    <textarea class="form-control" name="education_description" id="educationdescription" rows="2" maxlength="150"></textarea>\
                 </div>\
             </div>\
         </div>\
