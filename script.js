@@ -2,8 +2,8 @@ var counter=1;
 function add_experience(){
     counter+=1
 
-html=
-'<div class="card mt-3" id="experience'+counter+'">\
+$("#experience").append(
+    '<div class="card mt-3" id="experience'+counter+'">\
     <div class="card-header">\
         <div class="row">\
             <div class="col-12">\
@@ -44,14 +44,13 @@ html=
         </div>\
     </div>\
 </div>'
+);
 
-
-var form= document.getElementById('experience')
-form.innerHTML+= html
 }
 
+
 function delete_experience(){
-    counter+=1
+    counter-=1
     var elem = document.getElementById('deleteexperience');
     elem.parentElement.parentElement.parentElement.parentElement.remove();
 }
@@ -60,7 +59,7 @@ function delete_experience(){
 function add_education(){
     counter+=1
 
-html=
+$("#experience").append(
 '<div class="card mt-3" id="education'+counter+'">\
     <div class="card-header">\
         <div class="row">\
@@ -102,14 +101,13 @@ html=
         </div>\
     </div>\
 </div>'
+);
 
 
-var form= document.getElementById('education')
-form.innerHTML+= html
 }
 
 function delete_education(){
-    counter+=1
+    counter-=1
     var elem = document.getElementById('deleteeducation');
     elem.parentElement.parentElement.parentElement.parentElement.remove();
 }
@@ -118,7 +116,7 @@ function delete_education(){
 function add_skill(){
     counter+=1
 
-html=
+$("#experience").append(
 '<div class="card mt-2" id="skills'+counter+'">\
     <div class="card-body">\
         <div class="row">\
@@ -146,13 +144,12 @@ html=
         </div>\
     </div>\
 </div>'
+);
 
-var form= document.getElementById('skills')
-form.innerHTML+= html
 }
 
 function delete_skill(){
-    counter+=1
+    counter-=1
     var elem = document.getElementById('deleteskill');
     elem.parentElement.parentElement.parentElement.parentElement.remove();
 }
@@ -161,7 +158,7 @@ function delete_skill(){
 function add_lang(){
     counter+=1
 
-html=
+$("#experience").append(
 '<div class="card mt-2" id="lang1">\
     <div class="card-body">\
         <div class="row">\
@@ -189,14 +186,13 @@ html=
         </div>\
     </div>\
 </div>'
+);
 
-var form= document.getElementById('languages')
-form.innerHTML+= html
 }
 
 
 function delete_lang(){
-    counter+=1
+    counter-=1
     var elem = document.getElementById('deleteskill');
     elem.parentElement.parentElement.parentElement.parentElement.remove();
 }
