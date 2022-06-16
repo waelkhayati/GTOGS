@@ -59,7 +59,7 @@ function delete_experience(){
 function add_education(){
     counter+=1
 
-$("#experience").append(
+$("#education").append(
 '<div class="card mt-3" id="education'+counter+'">\
     <div class="card-header">\
         <div class="row">\
@@ -116,7 +116,7 @@ function delete_education(){
 function add_skill(){
     counter+=1
 
-$("#experience").append(
+$("#skill").append(
 '<div class="card mt-2" id="skills'+counter+'">\
     <div class="card-body">\
         <div class="row">\
@@ -158,7 +158,7 @@ function delete_skill(){
 function add_lang(){
     counter+=1
 
-$("#experience").append(
+$("#languages").append(
 '<div class="card mt-2" id="lang1">\
     <div class="card-body">\
         <div class="row">\
@@ -181,7 +181,7 @@ $("#experience").append(
                 </select>\
             </div>\
             <div class="col-2">\
-                <button id="deleteskill" type="button" id="toggle" onclick="delete_lang()"class="btn btn-dark">delete</button>\
+                <button id="deletelang" type="button" id="toggle" onclick="delete_lang()"class="btn btn-dark">delete</button>\
             </div>\
         </div>\
     </div>\
@@ -193,6 +193,6 @@ $("#experience").append(
 
 function delete_lang(){
     counter-=1
-    var elem = document.getElementById('deleteskill');
+    var elem = document.getElementById('deletelang');
     elem.parentElement.parentElement.parentElement.parentElement.remove();
 }
