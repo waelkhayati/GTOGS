@@ -116,7 +116,7 @@ function delete_education(){
 function add_skill(){
     counter+=1
 
-$("#skill").append(
+$("#skills").append(
 '<div class="card mt-2" id="skills'+counter+'">\
     <div class="card-body">\
         <div class="row">\
